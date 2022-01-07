@@ -1,0 +1,94 @@
+/* Default Theme */
+.default {
+    --text-color: #000;
+    --background-color: #fff;
+    --neutral: rgba(229, 229, 229, 0.3)
+}
+
+/* Dark Theme*/
+.dark {
+    --text-color: rgb(255, 255, 255);
+    --background-color: #141945;
+    --neutral: rgba(229, 229, 229, 0.3)
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: #bc4e9c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f80759, #bc4e9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 20em;
+    height: 30em;
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--background-color);
+}
+#search-bar {
+    width: 186.667px;
+    height: 33.33px;
+    border-radius: 16.667px;
+    padding: 16.667px;
+    border: 1px solid var(--text-color);
+    background-color: var(--neutral);
+    outline: none;
+}
+#search-bar::placeholder {
+    color: var(--text-color);
+}
+#toggle-theme {
+    padding: 2px 4px;
+    line-height: 20px;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    outline: none;
+    cursor: pointer;
+}
+.main {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main img {
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+}
+.main h1 {
+    margin-top: 1rem;
+    color: var(--text-color);
+}
+.main p {
+    margin-top: 1rem;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2;
+    color: var(--text-color);
+}
+
